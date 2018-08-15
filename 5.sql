@@ -1,0 +1,18 @@
+select sysdate,sysdate+1 from DUAL;
+select last_day(sysdate)"Last day" from DUAL;
+select add_months(sysdate,2),add_months(sysdate,-2) from DUAL;
+select months_between('25-DEC-2017',sysdate) from DUAL;
+select next_day(sysdate,'monday') from DUAL;
+select ename,to_char(hiredate,'month')"Joinig" from emp;
+select * from emp where length(ename)>5;
+select to_char(hiredate,'mm'),count(*) from emp group by to_char(hiredate,'mm') order by to_char(hiredate,'mm') ;
+select initcap(ename) from emp;
+select upper(ename) from emp;
+select concat(ename,job) from emp;
+select substr('mathematics',6,3) from DUAL;
+select translate('malayalam','a','t') from DUAL;
+select ltrim('oracle','or') from dual;
+select rtrim('oracle','le') from dual;
+select distinct(rpad(lpad('datatype',12,'.'),15,'_')) from emp;
+select ename,round((sal/30),2) from emp;
+select * from emp;
